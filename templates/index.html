@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Sentiment Analysis</h1>
+  <form method=post>
+    <dl>
+      <dt>Enter String:
+      <dd><input type=text name=in_text value="{{ret_obj}}">
+      <dt>Sentiment:
+      <dd><input type=text name=sent_text value="{{sent_obj}}">
+    </dl>
+    <p><input name="submit" type=submit value="Check"></p>
+    <p><input name="submit" type=submit value="Wrong"></p>
+  </form>
+{% endblock %}
